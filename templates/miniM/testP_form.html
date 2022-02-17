@@ -1,0 +1,738 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+{% block head %}
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  {% block title %}
+  <title>Formulario miniM</title>
+  {% endblock %}
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="{% static 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i' %}" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/icofont/icofont.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/venobox/venobox.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: eNno - v2.2.1
+  * Template URL: https://bootstrapmade.com/enno-free-simple-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+{% endblock %}
+
+{% block body %}
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top" style="background-color: purple;" >
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo mr-auto"><a href="/nuevo" style="color: white;" >INICIO</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav class="nav-menu d-none d-lg-block" style="background-color:  white; padding-right: 2%;"  >
+        <ul>
+          <li class="active"><a href="">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Mini Mental</a></li>
+          <li><a href="#portfolio">Rna</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Resultados</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+      <a href="#services" class="get-started-btn scrollto">Iniciar Test</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1>Remember Me</h1>
+          <h2>Identifica patrones de alzheimer mediante RNA y gamificacion</h2>
+          <div class="d-flex">
+            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+            <a href="https://www.youtube.com/watch?v=UI0vEspqW_A&t=8s" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"><i class="icofont-play-alt-2"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img">
+          <img src="{% static 'assets/img/fondo.jpg' %}" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Featured Services Section ======= -->
+    <section id="featured-services" class="featured-services">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-computer"></i></div>
+              <h4 class="title"><a href="">RNA</a></h4>
+              <p class="description">Para aprovechar una Red Neuronal Artificial existen algunos puntos para garantizar el buen funcionamiento, como la capacidad para recopilar la suficiente cantidad de datos, la capacidad de entrenamiento de las neuronas y Aprovechar la evolución de los procesadores gráficos.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-image"></i></div>
+              <h4 class="title"><a href="">GAMIFICACION</a></h4>
+              <p class="description">Este proyecto es una ayuda para demostrar y confirmar el impacto que tiene la aplicación de la inteligencia artificial unida a la gamificación en áreas de la psicología y salud mental. </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-tasks-alt"></i></div>
+              <h4 class="title"><a href="">Enfermedad de Alzheimer</a></h4>
+              <p class="description">El informe mundial sobre Alzheimer (2018) afirma sobre el impacto mundial de la demencia que: “cada tres segundos habrá un nuevo caso de demencia en todo el mundo” , las cifras hasta el 2018 no son alentadoras, “50 millones de personas en todo el mundo viven con demencia” y se espera que esta cifra se triplique hasta el año 2050”.   </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Featured Services Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="{% static 'assets/img/hero-img.png' %}" class="img-fluid animated" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content">
+            <h3>Prototipo de gaminifacion y RNA para identificar patrones tempranos de Alzheimer</h3>
+            <p class="font-italic">
+                La presente propuesta pretende identificar diferentes patrones que caracterizan a una persona que puede llegar a padecer la enfermedad de Alzheimer (EA). Utilizando una red neuronal artificial (RNA) que será capaz de analizar una serie de información recogida a partir de un juego formativo, el cual, de una manera indirecta, logrará obtener dicha información que será evaluada por el sistema conexionista y así lograr identificar de manera temprana síntomas de Alzheimer en personas adultas entre 50 y 55 años.
+            </p>
+            <ul>
+              <li><i class="icofont-check-circled"></i>Analizar las causas, factores y pruebas realizadas a personas entre 50 y 55 años de edad con la patología del Alzheimer en la ciudad de San Juan de Pasto.</li>
+              <li><i class="icofont-check-circled"></i>Aplicar una arquitectura software que permita comprender la relación que existe entre los elementos para ayudar a mejorar el aprendizaje procedimental.</li>
+              <li><i class="icofont-check-circled"></i>Construir un prototipo que utilice RNA y gamificación para detectar patrones tempranos de Alzheimer.</li>
+              <li><i class="icofont-check-circled"></i>Implementar y evaluar la herramienta junto a un experto en esta área del Alzheimer.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container">
+
+        <div class="row counters">
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">232</span>
+            <p>Clients</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">521</span>
+            <p>Projects</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">1,463</span>
+            <p>Hours Of Support</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">15</span>
+            <p>Hard Workers</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Services</span>
+          <h2>Mini Mental Test</h2>
+          <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit"><a href="miniM/">Guardar</a></button>
+          </form>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4><a href="">ID SPYDER</a></h4>
+              <p>Spyder es un entorno de desarrollo integrado multiplataforma de código abierto para programación científica en el lenguaje Python.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4><a href="">Entorno Anaconda</a></h4>
+              <p>Su filosofía de diseño enfatiza la legibilidad del código y su sintaxis permite a los programadores expresar conceptos en menos líneas de código de lo que sería posible en lenguajes como C ++ o Java</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><a href="">Python</a></h4>
+              <p>Python es un lenguaje de programación interpretado cuya filosofía hace hincapié en la legibilidad de su código.​ Se trata de un lenguaje de programación multiparadigma, ya que soporta parcialmente la orientación a objetos, programación imperativa y, en menor medida, programación funcional.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4><a href="">Django</a></h4>
+              <p>Django es un framework de desarrollo web de código abierto, escrito en Python, que respeta el patrón de diseño conocido como modelo–vista–controlador.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-slideshow"></i></div>
+              <h4><a href="">Unity 3d</a></h4>
+              <p>Unity es un motor de videojuego multiplataforma creado por Unity Technologies. Unity está disponible como plataforma de desarrollo para Microsoft Windows, Mac OS, Linux. La plataforma de desarrollo tiene soporte de compilación con diferentes tipos de plataformas</>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-arch"></i></div>
+              <h4><a href="">Alzheimer</a></h4>
+              <p>De la unión de las neuronas nace una conexión muy importante, Una conexión neuronal depende cada vez más de las interacciones con el medio ambiente, y de esta manera “se interconectan a través del crecimiento de extensiones del cuerpo celular que reciben señales de otras neuronas</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Portfolio</span>
+          <h2>REDES NEURONALES ARTIFICIALES</h2>
+          <p>La Inteligencia artificial (IA) Es una de las ramas de las ciencias de la computación que más interés ha despertado en la actualidad, debido a su enorme campo de aplicación.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="{% static 'assets/img/spyder.png' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 1</h4>
+              <p>App</p>
+              <a href="{% static 'assets/img/anacondaa.jpg' %}" data-gall="portfolioGallery" class="venobox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="{% static 'assets/img/anacondaa.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <a href="{% static 'assets/img/python.png' %}" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="{% static 'portfolio-details.html' %}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="{% static 'assets/img/python.png' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 2</h4>
+              <p>App</p>
+              <a href="{% static 'assets/img/portfolio/portfolio-3.jpg' %}" data-gall="portfolioGallery" class="venobox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+              <a href="{% static 'portfolio-details.html' %}" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="{% static 'assets/img/django.png' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 2</h4>
+              <p>Card</p>
+              <a href="{% static 'assets/img/portfolio/portfolio-4.jpg' %}" data-gall="portfolioGallery" class="venobox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="{% static 'assets/img/unity.png' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 2</h4>
+              <p>Web</p>
+              <a href="{% static 'assets/img/portfolio/portfolio-5.jpg' %}" data-gall="portfolioGallery" class="venobox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="{% static 'assets/img/portfolio/portfolio-6.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 3</h4>
+              <p>App</p>
+              <a href="{% static 'assets/img/portfolio/portfolio-6.jpg' %}" data-gall="portfolioGallery" class="venobox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card" %}>
+            <img src="{% static 'assets/img/alzheimerr.png' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 1</h4>
+              <p>Card</p>
+              <a href="{% static 'assets/img/portfolio/portfolio-7.jpg' %}" data-gall="portfolioGallery" class="venobox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <style type="text/css">
+      #sitio {
+          padding: 25rem;
+          font-size: 5rem;
+          margin-left: 30rem;
+      }
+      h1{
+          font-family: 'Antonio', sans-serif;
+          margin: auto;
+          width: 50%;
+      }
+      .contenedor{
+          margin: auto;
+          margin-top: 50px;
+          border: 4px solid purple;
+          background: grey;
+          width: 50%;
+      }
+      .contenedor {
+          width: 50%;
+      }
+      .contenedor img{
+          float: right;
+          width: 300px;
+          margin-right: 15px;
+      }
+      
+  
+  </style>
+  
+  <input data-jscolor="{value:'#CC66FF'}", onInput="update(this.jscolor)">
+  <div id="sitio">
+      Texto
+  </div>
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jscolor/2.4.5/jscolor.min.js"></script>
+  <script src="https://unpkg.com/brain.js"></script>
+  
+  <script type="text/javascript">
+      
+      //Inicializar red neuronal
+      var network = new brain.NeuralNetwork();
+  
+      //Entrenarla
+  
+      network.train([
+          //Fondo negro (entrada en 0s) = texto blanco (salida = 1)
+          {input: {rojo: 0, verde: 0, azul: 0}, output: {color: 1}},
+          //Fondo blanco (entrada en 1s) = texto negro (salida = 0)
+          {input: {rojo: 1, verde: 1, azul: 1}, output: {color: 0}},
+          //Fondo verde, texto negro
+          {input: {rojo: 0, verde: 1, azul: 0}, output: {color: 0}},
+          //Fondo azul, texto blanco
+          {input: {rojo: 0, verde: .43, azul: 1}, output: {color: 1}},
+          //Fondo rojo, texto blanco
+          {input: {rojo: 1, verde: 0, azul: 0}, output: {color: 1}},
+      ]);
+      
+  
+      //Traer el color de la caja de texto
+      function update(color) {
+  
+          console.log(color);
+          
+          var rgb = [color.channels.r, color.channels.g, color.channels.b];
+          //console.log(rgb);
+  
+          var div = document.getElementById("sitio");
+          div.style.background = color.toHEXString(); //Actualiza el color del div
+  
+          //Una vez creada la red se la puede utilizar
+          var entrada = {
+              rojo: rgb[0]/255,
+              verde: rgb[1]/255,
+              azul: rgb[2]/255,
+          };
+  
+          //Ejecucion de la red neuronal
+          var resultado = network.run(entrada);
+          //console.log(resultado);
+  
+          //Si resultado > .5, se considera color de texto blanco
+          if (resultado.color > .5) {
+              div.style.color = "white";
+          }  else {
+              div.style.color = "black";
+          }
+      }
+  
+      
+  </script>
+  
+      <h1 class="title-content" >FUNCIONAMIENTO RED NEURONAL</h1>
+      
+      <div class="contenedor">
+          <div class="primario">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Synthese%2B.svg/1200px-Synthese%2B.svg.png" >
+              RGB (sigla en inglés de red, green, blue, en español «rojo, verde y azul») Es la composición del color en términos de la intensidad de los colores primarios de la luz.
+              RGB es un modelo de color basado en la síntesis aditiva, con el que es posible representar un color mediante la mezcla por adición de los tres colores de luz primarios. El modelo de color RGB no define por sí mismo lo que significa exactamente rojo, verde o azul, por lo que los mismos valores RGB pueden mostrar colores notablemente diferentes en distintos dispositivos que usen este modelo de color
+              .
+              function update(color) { 
+                  var rgb = [color.channels.r, color.channels.g, color.channels.b];
+              }
+          </div>
+          
+      </div>
+  
+      <div class="contenedor">
+          <div class="primario">
+              <img src="https://image.slidesharecdn.com/javascriptapisyouveneverheardof-121112193408-phpapp02/95/javascript-apis-youve-never-heard-of-and-some-you-have-53-638.jpg?cb=1352820546" >
+              El método getElementById permite, como su nombre indica, seleccionar un elemento del documento por medio del valor del atributo id que se le haya asignado.
+              El elemento HTML style permite a los autores insertar información de hojas de estilo dentro del documento. A diferencia del atributo "style", este elemento permite la inserción de clases o selectores ID, incrementando la versatilidad de la implementación de hojas de estilo.
+          </div>
+          
+      </div>
+  
+      <h1 class="title-content" >CAPAS DE UNA RED NEURONAL</h1>
+      
+      <div class="contenedor">
+          <div class="primario">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/RedNeuronalArtificial.png" >
+              Una Red Neuronal Artificial esta conformada por capas la primera capa corresponde a las entradas (Rojo, Verde, Azul).
+  
+              Por lo general los valores de la primer capa deben ser de 1 a 0, El modelo de color RGB maneja un rango 0-255, para solucionar esto se divide la variable color sobre 255.
+              
+          </div>
+          
+      </div>
+  
+      <div class="contenedor">
+          <div class="primario">
+              <img src="https://kikestark.files.wordpress.com/2009/10/blanco-o-negro.jpg" >
+              En la fase de entrenamiento de una red, se debe definir los posibles casos que pueden ocurrir. En este ejemplo
+              La capa de salida conformada por una red arroja resultados entre 0 y 1.
+              {input: {rojo: 0, verde: 0, azul: 0}, output: {color: 1}}, <br>
+          
+              {input: {rojo: 1, verde: 1, azul: 1}, output: {color: 0}}, <br>
+  
+              Gracias a la libreria brain se puede Inicializar la red neuronal y utilizar el parametro run para realizar la prediccion
+  
+              var resultado = network.run(entrada); <br>
+  
+              De esta forma solo basta clasificar el resultado si es > 5 o < 5.
+              if (resultado.color > .5) {
+                  div.style.color = "white";
+              }  else {
+                  div.style.color = "black";
+              }
+  
+          </div>
+          
+      </div>
+  
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container">
+      
+      </div>
+    </section><!-- End Testimonials Section -->
+
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Team</span>
+          <h2>Team</h2>
+          <p>UNIVERSIDAD CESMAG - FACULTAD INGENIERIA - PSICOLOGIA</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="{% static 'assets/img/team/team-1.jpg' %}" alt="">
+              <h4>Michael Bucheli</h4>
+              <span>Desarrollador software</span>
+              <p>
+                
+              </p>
+              <div class="social">
+                <a href=""><i class="icofont-twitter"></i></a>
+                <a href=""><i class="icofont-facebook"></i></a>
+                <a href=""><i class="icofont-instagram"></i></a>
+                <a href=""><i class="icofont-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="{% static 'assets/img/team/team-2.jpg' %}" alt="">
+              <h4>Sergio Pinta</h4>
+              <span>Diseñador</span>
+              <p>
+                
+              </p>
+              <div class="social">
+                <a href=""><i class="icofont-twitter"></i></a>
+                <a href=""><i class="icofont-facebook"></i></a>
+                <a href=""><i class="icofont-instagram"></i></a>
+                <a href=""><i class="icofont-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="{% static 'assets/img/team/team-3.jpg' %}" alt="">
+              <h4>Daniel Arteaga</h4>
+              <span>Asesor de grado</span>
+              <p>
+                
+              </p>
+              <div class="social">
+                <a href=""><i class="icofont-twitter"></i></a>
+                <a href=""><i class="icofont-facebook"></i></a>
+                <a href=""><i class="icofont-instagram"></i></a>
+                <a href=""><i class="icofont-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Contact</span>
+          <h2>Contactenos</h2>
+          <p></p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="icofont-google-map"></i>
+                <h4>Location:</h4>
+                <p></p>
+              </div>
+
+              <div class="email">
+                <i class="icofont-envelope"></i>
+                <h4>Email:</h4>
+                <p>michael_2504@hotmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="icofont-phone"></i>
+                <h4>Call:</h4>
+                <p>+57 315-528-7599</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/place/Anganoy,+Pasto,+Nari%C3%B1o/data=!4m2!3m1!1s0x8e2ed47688e74c01:0x1085fe4170783f47?sa=X&ved=2ahUKEwjPsIuX4_HyAhXRQjABHS0UApUQ8gF6BAgPEAE" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="name">Tu nombre</label>
+                  <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Tu correo</label>
+                  <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Asunto</label>
+                <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <label for="name">Mensaje</label>
+                <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+
+      <div class="container">
+
+        <div class="row  justify-content-center">
+          <div class="col-lg-6">
+            <h3>Remember Me</h3>
+            
+          </div>
+        </div>
+
+        <div class="row footer-newsletter justify-content-center">
+          <div class="col-lg-6">
+            <form action="" method="post">
+              <input type="email" name="email" placeholder="Ingresa tu email"><input type="submit" value="Subscribir">
+            </form>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+    <section id="hero" class="d-flex align-items-center">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+            <h1>Remember Me</h1>
+            
+            <div class="d-flex">
+              <a href="/resultados" class="btn-get-started scrollto">Resultados</a>
+              
+            </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 hero-img">
+            <img src="{% static 'assets/img/fondo.jpg' %}" class="img-fluid animated" alt="">
+          </div>
+        </div>
+      </div>
+  
+    </section><!-- End Hero -->
+
+    <div class="container footer-bottom clearfix">
+      
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/enno-free-simple-bootstrap-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">Remember Me</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/waypoints/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/counterup/counterup.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/venobox/venobox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/owl.carousel/owl.carousel.min.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+{% endblock %}
+
+</html>
